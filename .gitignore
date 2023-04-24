@@ -15,3 +15,7 @@
 /obj/Debug/aiSomColor.exe
 /obj/Debug/aiSomColor.csproj.GenerateResource.cache
 /obj/Debug/aiSomColor.csproj.FileListAbsolute.txt
+/obj/Debug
+/.vs/aiSomColor/v17
+/.vs/aiSomColor/FileContentIndex
+/bin/Debug/aiSomColor.pdb
