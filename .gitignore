@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj/Debug
+/.vs
+/bin/Debug/aiSomColor.exe.config
+/bin/Debug/aiSomColor.pdb
+/bin/Debug/aiSomColor.exe
+/bin/Debug/aiSomColor.pdb
+/bin/Debug/aiSomColor.exe
