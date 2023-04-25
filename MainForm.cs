@@ -46,14 +46,14 @@ namespace aiSomColor
 			//
 			InitializeComponent();
 
-			pictureBox1.Image = (Image)(new Bitmap(pictureBox1.ClientSize.Width, pictureBox1.ClientSize.Height, PixelFormat.Format32bppRgb));
-			pictureBox2.Image = (Image)(new Bitmap(pictureBox2.ClientSize.Width, pictureBox2.ClientSize.Height, PixelFormat.Format32bppRgb));
-			pictureBox3.Image = (Image)(new Bitmap(pictureBox3.ClientSize.Width, pictureBox3.ClientSize.Height, PixelFormat.Format32bppRgb));
-			pictureBox4.Image = (Image)(new Bitmap(pictureBox4.ClientSize.Width, pictureBox4.ClientSize.Height, PixelFormat.Format32bppRgb));
-			pictureBox5.Image = (Image)(new Bitmap(pictureBox5.ClientSize.Width, pictureBox5.ClientSize.Height, PixelFormat.Format32bppRgb));
-			pictureBox6.Image = (Image)(new Bitmap(pictureBox6.ClientSize.Width, pictureBox6.ClientSize.Height, PixelFormat.Format32bppRgb));
+			pictureBox1.Image = new Bitmap(pictureBox1.ClientSize.Width, pictureBox1.ClientSize.Height, PixelFormat.Format32bppRgb);
+			pictureBox2.Image = new Bitmap(pictureBox2.ClientSize.Width, pictureBox2.ClientSize.Height, PixelFormat.Format32bppRgb);
+			pictureBox3.Image = new Bitmap(pictureBox3.ClientSize.Width, pictureBox3.ClientSize.Height, PixelFormat.Format32bppRgb);
+			pictureBox4.Image = new Bitmap(pictureBox4.ClientSize.Width, pictureBox4.ClientSize.Height, PixelFormat.Format32bppRgb);
+			pictureBox5.Image = new Bitmap(pictureBox5.ClientSize.Width, pictureBox5.ClientSize.Height, PixelFormat.Format32bppRgb);
+			pictureBox6.Image = new Bitmap(pictureBox6.ClientSize.Width, pictureBox6.ClientSize.Height, PixelFormat.Format32bppRgb);
 
-			_rnd = new Random();
+			_rnd = new Random((int)DateTime.Now.Ticks);
 			_som = new SOM(NumCellsAcross, NumCellsDown, SizeOfInputVector);
 
 			_numTrainingSet = _predefTrainingSet.GetUpperBound(0) + 1;//_predefTrainingSet.Length;
